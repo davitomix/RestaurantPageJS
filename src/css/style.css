@@ -9,7 +9,8 @@ html {
 
 body {
   /* opacity: 0; */
-  background-color: rgb(203, 126, 126);
+  /* overflow-x: hidden; */
+  background-color: black;
   margin: 0;
   padding: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
