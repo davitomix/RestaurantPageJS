@@ -4,9 +4,11 @@ import Injector from './content-injector';
 const AboutObject = (() => {
   const domObject = DomObj;
   const injector = Injector;
+  
   const set = () => {
-    const divObj = domObject.div;
-    injector.injecting();
+    let divObj = domObject.div;
+    divObj = injector.injectContent(divObj);
+    domObject.setContent(divObj);
   };
 
   return {
