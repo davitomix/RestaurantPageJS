@@ -1,10 +1,12 @@
 const DomObj = (() => {
-  const objPrint = () => {
-    console.log('Setting up Objects...');
-  };
+  const qrySelect = document.querySelector.bind(document);
+  const mainContainer = qrySelect('#content');
+  const div = document.createElement('div');
 
   return {
-    objPrint
+    qrySelect,
+    mainContainer,
+    div
   };
 })();
 
