@@ -4,7 +4,7 @@ import ContactImg from './img/contact.jpg';
 const ContactObject = (() => {
   const domMultiplexor = DomObj;
   let contents = null;
-  // const imagePath = 'img';
+  
   const contactCtnr = document.createElement('address');
   contactCtnr.id = 'contact-container';
 

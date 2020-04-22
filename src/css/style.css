@@ -26,3 +26,8 @@ main {
   left: 0px;
   top: 0px;
 }
+
+.dish img {
+  height: 100px;
+  width: 100px;
+}
