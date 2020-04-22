@@ -1,9 +1,10 @@
 import './css/style.css';
 import './img/bkg-1.jpg';
-import './img/bkg-2.jpg';
 import AboutObject from './about-page';
+import ContactObject from './contact-page';
 
 const AboutPage = AboutObject;
+const ContactPage = ContactObject;
 
 window.onload = function ready() {
   AboutPage.injectAboutPage();
@@ -12,5 +13,6 @@ window.onload = function ready() {
 };
 
 const run = (() => {
+  ContactPage.injectContactPage();
   console.log('Running...');
 });
