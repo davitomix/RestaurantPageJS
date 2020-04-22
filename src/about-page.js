@@ -19,7 +19,6 @@ const AboutObject = (() => {
   };
 
   return {
-    getCtnr,
     injectAboutPage
   };
 })();
