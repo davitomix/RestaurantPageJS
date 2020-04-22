@@ -5,6 +5,11 @@ import AboutObject from './about-page';
 
 const AboutPage = AboutObject;
 
+window.onload = function ready() {
+  AboutPage.set();
+  run();
+};
+
 const run = (() => {
-  AboutPage.prints();
-})();
+  console.log('Running...');
+});

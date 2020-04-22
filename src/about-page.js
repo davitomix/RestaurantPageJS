@@ -1,14 +1,15 @@
 import DomObj from './dom-utils';
 
-const AboutObject = (() => {
-const domObject = DomObj;
 
-  const prints = () => {
-    domObject.prints();
+const AboutObject = (() => {
+  const domObject = DomObj;
+
+  const set = () => {
+    domObject.objPrint();
   };
 
   return {
-    prints
+    set
   };
 })();
 

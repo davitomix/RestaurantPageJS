@@ -1,10 +1,10 @@
 const DomObj = (() => {
-  const prints = () => {
-    console.log('hellooo');
+  const objPrint = () => {
+    console.log('Setting up Objects...');
   };
 
   return {
-    prints
+    objPrint
   };
 })();
 
