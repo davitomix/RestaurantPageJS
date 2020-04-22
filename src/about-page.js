@@ -1,18 +1,26 @@
 import DomObj from './dom-utils';
-import Injector from './content-injector';
 
 const AboutObject = (() => {
-  const domObject = DomObj;
-  const injector = Injector;
+  let contents = null;
+  const domMultiplexor = DomObj;
+  const aboutCtnr = document.createElement('div');
+  const subtitle = document.createElement('h2');
+  aboutCtnr.id = 'about-container';
+  subtitle.innerText = 'About Page.';
+  aboutCtnr.appendChild(subtitle);
 
-  const set = () => {
-    let divObj = domObject.div;
-    divObj = injector.injectAbout(divObj);
-    domObject.setContent(divObj);
+  const getCtnr = () => {
+    return [aboutCtnr];
+  };
+
+  const injectAboutPage = () => {
+    contents = contents || getCtnr();
+    domMultiplexor.setContent(contents);
   };
 
   return {
-    set
+    getCtnr,
+    injectAboutPage
   };
 })();
 

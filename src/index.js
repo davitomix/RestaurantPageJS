@@ -6,7 +6,8 @@ import AboutObject from './about-page';
 const AboutPage = AboutObject;
 
 window.onload = function ready() {
-  AboutPage.set();
+  AboutPage.injectAboutPage();
+  console.log('Initializing...');
   run();
 };
 
