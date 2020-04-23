@@ -1,25 +1,23 @@
 import DomObj from './dom-utils';
 
-let contents = null;
-
-const domMultiplexor = new DomObj();
-const aboutCtnr = document.createElement('div');
-const subtitle = document.createElement('h2');
-
 class AboutObject {
   constructor() {
-    aboutCtnr.id = 'about-container';
-    subtitle.innerText = 'About Page.';
-    aboutCtnr.appendChild(subtitle);
+    this.contents = null;
+    this.domMultiplexor = new DomObj();
+    this.aboutCtnr = document.createElement('div');
+    this.subtitle = document.createElement('h2');
+    this.aboutCtnr.id = 'about-container';
+    this.subtitle.innerText = 'About Page.';
+    this.aboutCtnr.appendChild(this.subtitle);
   }
 
   getCtnr() {
-    return [aboutCtnr];
+    return [this.aboutCtnr];
   }
 
   injectAboutPage() {
-    contents = contents || this.getCtnr();
-    domMultiplexor.setContent(contents);
+    this.contents = this.contents || this.getCtnr();
+    this.domMultiplexor.setContent(this.contents);
   }
 }
 

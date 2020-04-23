@@ -1,12 +1,14 @@
-const qrySelect = document.querySelector.bind(document);
-const mainContainer = qrySelect('#content');
-const fragment = document.createDocumentFragment();
-
 class DomObj {
+  constructor() {
+    this.qrySelect = document.querySelector.bind(document);
+    this.mainContainer = this.qrySelect('#content');
+    this.fragment = document.createDocumentFragment();
+  }
+
   setContent(content) {
-    content.forEach(element => fragment.appendChild(element));
-    this.clearContent(mainContainer);
-    mainContainer.appendChild(fragment);
+    content.forEach(element => this.fragment.appendChild(element));
+    this.clearContent(this.mainContainer);
+    this.mainContainer.appendChild(this.fragment);
   }
 
   clearContent(container) {
