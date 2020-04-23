@@ -1,41 +1,43 @@
 import DomObj from './dom-utils';
 import ContactImg from './img/contact.jpg';
 
-let contents = null;
-
-const domMultiplexor = new DomObj();
-const contactCtnr = document.createElement('address');
-const imgElem = document.createElement('img');
-const header = document.createElement('h1');
-const email = document.createElement('div');
-const cellular = document.createElement('div'); 
-const whats = document.createElement('div');
-
 class ContactObject {  
   constructor() {
-    contactCtnr.id = 'contact-container';
-    imgElem.src = ContactImg;
-    header.innerText = 'Contact';
+    this.contents = null;
+    this.domMultiplexor = new DomObj();
+    this.contactCtnr = document.createElement('address');
+    this.imgElem = document.createElement('img');
+    this.header = document.createElement('h1');
+    this.email = document.createElement('div');
+    this.cellular = document.createElement('div'); 
+    this.whats = document.createElement('div');
+    this.contactCtnr.id = 'contact-container';
+    this.imgElem.src = ContactImg;
+    this.header.innerText = 'Contact';
 
-    email.className = 'email';
-    email.innerHTML = '<a href="mailto:contact@malolarestaurant.com">contact@malolarestaurant.com</a>';
+    this.email.className = 'email';
+    this.email.innerHTML = '<a href="mailto:contact@malolarestaurant.com">contact@malolarestaurant.com</a>';
 
-    cellular.className = 'cell';
-    cellular.innerHTML = 'Cell phone: <a href="tel:4433005440">555 555 5555</a>';
+    this.cellular.className = 'cell';
+    this.cellular.innerHTML = 'Cell phone: <a href="tel:4433005440">555 555 5555</a>';
 
-    whats.className = 'whats';
-    whats.innerHTML = 'whatsapp: <a href="https://api.whatsapp.com/send?phone=+525555555555">+52 555 555 5555</a>';
+    this.whats.className = 'whats';
+    this.whats.innerHTML = 'whatsapp: <a href="https://api.whatsapp.com/send?phone=+525555555555">+52 555 555 5555</a>';
 
-    contactCtnr.appendChild(imgElem);
-    contactCtnr.appendChild(header);
-    contactCtnr.appendChild(email);
-    contactCtnr.appendChild(cellular);
-    contactCtnr.appendChild(whats);
+    this.contactCtnr.appendChild(this.imgElem);
+    this.contactCtnr.appendChild(this.header);
+    this.contactCtnr.appendChild(this.email);
+    this.contactCtnr.appendChild(this.cellular);
+    this.contactCtnr.appendChild(this.whats);
+  }
+
+  getCtnr() {
+    return [this.contactCtnr];
   }
 
   injectContactPage() {
-    contents = contents || [contactCtnr];
-    domMultiplexor.setContent(contents);
+    this.contents = this.contents || this.getCtnr();
+    this.domMultiplexor.setContent(this.contents);
   };
 };
 
