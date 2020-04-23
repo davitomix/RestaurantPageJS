@@ -17,6 +17,6 @@ window.onload = function ready() {
 const run = (() => {
   // ContactPage.injectContactPage();
   // MenuPage.injectMenuPage();
-  AboutPage.injectAboutPage();
+  // AboutPage.injectAboutPage();
   console.log('Running...');
 });
