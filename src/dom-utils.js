@@ -1,25 +1,19 @@
-const DomObj = (() => {
-  const qrySelect = document.querySelector.bind(document);
-  const mainContainer = qrySelect('#content');
+const qrySelect = document.querySelector.bind(document);
+const mainContainer = qrySelect('#content');
+const fragment = document.createDocumentFragment();
 
-  const setContent = (content) => {
-    const fragment = document.createDocumentFragment();
+class DomObj {
+  setContent(content) {
     content.forEach(element => fragment.appendChild(element));
-    clearContent(mainContainer);
+    this.clearContent(mainContainer);
     mainContainer.appendChild(fragment);
-  };
+  }
 
-  const clearContent = (container) => {
+  clearContent(container) {
     while (container.firstChild) {
       container.removeChild(container.firstChild);
     }
-  };
-  
-  return {
-    qrySelect,
-    mainContainer,
-    setContent
-  };
-})();
+  }
+}
 
 export default DomObj;

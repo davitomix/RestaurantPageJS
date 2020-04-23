@@ -2,7 +2,7 @@ import DomObj from './dom-utils';
 
 let contents = null;
 
-const domMultiplexor = DomObj;
+const domMultiplexor = new DomObj();
 const aboutCtnr = document.createElement('div');
 const subtitle = document.createElement('h2');
 

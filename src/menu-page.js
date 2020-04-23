@@ -4,7 +4,7 @@ import Burger2 from './img/burger-2.jpg';
 
 let contents = null;
 
-const domMultiplexor = DomObj;
+const domMultiplexor = new DomObj();
 const dishesInfo = [
   {
     img: Burger1,

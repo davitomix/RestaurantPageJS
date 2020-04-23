@@ -3,7 +3,7 @@ import ContactImg from './img/contact.jpg';
 
 let contents = null;
 
-const domMultiplexor = DomObj;
+const domMultiplexor = new DomObj();
 const contactCtnr = document.createElement('address');
 const imgElem = document.createElement('img');
 const header = document.createElement('h1');
@@ -22,7 +22,7 @@ class ContactObject {
 
     cellular.className = 'cell';
     cellular.innerHTML = 'Cell phone: <a href="tel:4433005440">555 555 5555</a>';
-    
+
     whats.className = 'whats';
     whats.innerHTML = 'whatsapp: <a href="https://api.whatsapp.com/send?phone=+525555555555">+52 555 555 5555</a>';
 
