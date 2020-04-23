@@ -33,12 +33,8 @@ class ContactObject {
     contactCtnr.appendChild(whats);
   }
 
-  getCtnr() {
-    return [contactCtnr];
-  };
-
   injectContactPage() {
-    contents = contents || this.getCtnr();
+    contents = contents || [contactCtnr];
     domMultiplexor.setContent(contents);
   };
 };

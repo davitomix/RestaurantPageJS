@@ -7,16 +7,21 @@ import MenuObject from './menu-page';
 const AboutPage = new AboutObject();
 const ContactPage = new ContactObject();
 const MenuPage = new MenuObject();
+const domMultiplexor = new DomObj();
 
 window.onload = function ready() {
-  // AboutPage.injectAboutPage();
+  AboutPage.injectAboutPage();
   console.log('Initializing...');
   run();
 };
 
+const setMenuItemEventListener = (selector, contentsFn) => {
+  domMultiplexor.getQrySelect(selector).addEventListener('click', contentsFn);
+};
+
 const run = (() => {
-  // ContactPage.injectContactPage();
-  MenuPage.injectMenuPage();
-  // AboutPage.injectAboutPage();
+  setMenuItemEventListener('#about', AboutPage.injectAboutPage);
+  setMenuItemEventListener('#menu', MenuPage.injectMenuPage);
+  setMenuItemEventListener('#contact', ContactPage.injectContactPage);
   console.log('Running...');
 });

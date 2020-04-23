@@ -13,12 +13,8 @@ class AboutObject {
     aboutCtnr.appendChild(subtitle);
   }
 
-  getCtnr() {
-    return [aboutCtnr];
-  }
-
   injectAboutPage() {
-    contents = contents || this.getCtnr();
+    contents = contents || [aboutCtnr];
     domMultiplexor.setContent(contents);
   }
 }
