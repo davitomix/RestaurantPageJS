@@ -16,7 +16,7 @@ window.onload = function ready() {
 
 const run = (() => {
   // ContactPage.injectContactPage();
-  MenuPage.injectMenuPage();
-  // AboutPage.injectAboutPage();
+  // MenuPage.injectMenuPage();
+  AboutPage.injectAboutPage();
   console.log('Running...');
 });
