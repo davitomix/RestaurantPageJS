@@ -18,5 +18,5 @@ const run = (() => {
   // ContactPage.injectContactPage();
   MenuPage.injectMenuPage();
   // AboutPage.injectAboutPage();
-  console.log('Running...');
+  console.log('Hello World...');
 });
