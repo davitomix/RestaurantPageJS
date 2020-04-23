@@ -82,12 +82,8 @@ class MenuObject {
     });
   }
 
-  getCtnr() {
-    return [dishCtnr];
-  }
-
   injectMenuPage() {
-    contents = contents || this.getCtnr();
+    contents = contents || [dishCtnr];
     domMultiplexor.setContent(contents);
   }
 }
