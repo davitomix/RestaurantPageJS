@@ -5,7 +5,7 @@ import ContactObject from './contact-page';
 import MenuObject from './menu-page';
 
 const AboutPage = new AboutObject();
-const ContactPage = ContactObject;
+const ContactPage = new ContactObject();
 const MenuPage = MenuObject;
 
 window.onload = function ready() {
@@ -15,8 +15,8 @@ window.onload = function ready() {
 };
 
 const run = (() => {
-  // ContactPage.injectContactPage();
+  ContactPage.injectContactPage();
   // MenuPage.injectMenuPage();
-  AboutPage.injectAboutPage();
+  // AboutPage.injectAboutPage();
   console.log('Running...');
 });
