@@ -4,12 +4,12 @@ import AboutObject from './about-page';
 import ContactObject from './contact-page';
 import MenuObject from './menu-page';
 
-const AboutPage = AboutObject;
+const AboutPage = new AboutObject();
 const ContactPage = ContactObject;
 const MenuPage = MenuObject;
 
 window.onload = function ready() {
-  AboutPage.injectAboutPage();
+  // AboutPage.injectAboutPage();
   console.log('Initializing...');
   run();
 };
@@ -17,6 +17,6 @@ window.onload = function ready() {
 const run = (() => {
   // ContactPage.injectContactPage();
   // MenuPage.injectMenuPage();
-  // AboutPage.injectAboutPage();
+  AboutPage.injectAboutPage();
   console.log('Running...');
 });
