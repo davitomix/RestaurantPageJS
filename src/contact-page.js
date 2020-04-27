@@ -1,7 +1,7 @@
 import DomObj from './dom-utils';
 import ContactImg from './img/contact.jpg';
 
-class ContactObject {  
+class ContactObject {
   constructor() {
     this.contents = null;
     this.domMultiplexor = new DomObj();
