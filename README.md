@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link :rocket:](https://davitomix.github.io/RestaurantPageJS/)
 
 
 ## Getting Started
