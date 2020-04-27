@@ -16,13 +16,13 @@ class ContactObject {
     this.header.innerText = 'Contact';
 
     this.email.className = 'email';
-    this.email.innerHTML = '<a href="mailto:contact@malolarestaurant.com">contact@malolarestaurant.com</a>';
+    this.email.innerHTML = '<a href="mailto:contact@bericburger.com">contact@bericburger.com</a>';
 
     this.cellular.className = 'cell';
     this.cellular.innerHTML = 'Cell phone: <a href="tel:4433005440">555 555 5555</a>';
 
     this.whats.className = 'whats';
-    this.whats.innerHTML = 'whatsapp: <a href="https://api.whatsapp.com/send?phone=+525555555555">+52 555 555 5555</a>';
+    this.whats.innerHTML = 'Whatsapp: <a href="https://api.whatsapp.com/send?phone=+525555555555">+52 555 555 5555</a>';
 
     this.contactCtnr.appendChild(this.imgElem);
     this.contactCtnr.appendChild(this.header);
