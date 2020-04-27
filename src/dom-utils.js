@@ -10,7 +10,7 @@ class DomObj {
     this.clearContent(this.mainContainer);
     this.mainContainer.appendChild(this.fragment);
   }
-
+  /* eslint-disable */
   clearContent(container) {
     while (container.firstChild) {
       container.removeChild(container.firstChild);
@@ -20,6 +20,7 @@ class DomObj {
   qrySelector(selector) {
     return document.getElementById(selector);
   }
+  /* eslint-enable */
 
   getMainContainer() {
     return this.mainContainer;

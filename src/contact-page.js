@@ -9,7 +9,7 @@ class ContactObject {
     this.imgElem = document.createElement('img');
     this.header = document.createElement('h1');
     this.email = document.createElement('div');
-    this.cellular = document.createElement('div'); 
+    this.cellular = document.createElement('div');
     this.whats = document.createElement('div');
     this.contactCtnr.id = 'contact-container';
     this.imgElem.src = ContactImg;
@@ -38,7 +38,7 @@ class ContactObject {
   injectContactPage() {
     this.contents = this.contents || this.getCtnr();
     this.domMultiplexor.setContent(this.contents);
-  };
-};
+  }
+}
 
 export default ContactObject;

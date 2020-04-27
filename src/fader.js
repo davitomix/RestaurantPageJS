@@ -1,4 +1,5 @@
 class Fader {
+  /* eslint-disable */
   fade(element, delay = 100, start = 0, stop = 10, delta = 1) {
     (function f() {
       start += delta;
@@ -28,6 +29,7 @@ class Fader {
       }
     }());
   }
+  /* eslint-enable */
 }
 
 export default Fader;

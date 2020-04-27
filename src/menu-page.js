@@ -2,8 +2,6 @@ import DomObj from './dom-utils';
 import Burger1 from './img/burger-1.jpg';
 import Burger2 from './img/burger-2.jpg';
 
-let contents = null;
-
 class MenuObject {
   constructor() {
     this.domMultiplexor = new DomObj();
@@ -11,52 +9,52 @@ class MenuObject {
       {
         img: Burger1,
         head: 'Big Cheese',
-        body: "Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun."
+        body: 'Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun.',
       },
       {
         img: Burger2,
         head: 'Clasic Deal',
-        body: "Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun."
+        body: 'Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun.',
       },
       {
         img: Burger1,
         head: 'Famous Beric',
-        body: "Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun."
+        body: 'Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun.',
       },
       {
         img: Burger2,
         head: 'Famous Star with Chesse',
-        body: "Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun."
+        body: 'Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun.',
       },
       {
         img: Burger1,
         head: 'Super Star with Chesse',
-        body: "Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun."
+        body: 'Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun.',
       },
       {
         img: Burger2,
         head: 'Western Bacon Cheese Burger',
-        body: "Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun."
+        body: 'Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun.',
       },
       {
         img: Burger1,
         head: 'Jalapeño',
-        body: "Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun."
+        body: 'Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun.',
       },
       {
         img: Burger2,
         head: 'Doble Jalapeño',
-        body: "Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun."
+        body: 'Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun.',
       },
       {
         img: Burger1,
         head: 'Teriyaki Burger',
-        body: "Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun."
+        body: 'Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun.',
       },
       {
         img: Burger2,
         head: 'The Big Beric',
-        body: "Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun."
+        body: 'Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun.',
       },
     ];
     this.dishCtnr = document.createElement('div');
