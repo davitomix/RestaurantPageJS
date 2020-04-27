@@ -20,6 +20,10 @@ class DomObj {
   qrySelector(selector) {
     return document.getElementById(selector);
   }
+
+  getMainContainer() {
+    return this.mainContainer;
+  }
 }
 
 export default DomObj;

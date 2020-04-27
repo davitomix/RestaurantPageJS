@@ -4,11 +4,15 @@ import AboutObject from './about-page';
 import ContactObject from './contact-page';
 import MenuObject from './menu-page';
 import DomObj from './dom-utils';
+import Fader from './fader';
 
 const AboutPage = new AboutObject();
 const ContactPage = new ContactObject();
 const MenuPage = new MenuObject();
 const DomMultiplexor = new DomObj();
+const FaderObj = new Fader();
+
+let currentPage;
 
 window.onload = function ready() {
   AboutPage.injectAboutPage();
@@ -16,8 +20,17 @@ window.onload = function ready() {
   run();
 };
 
-const setListenerTool = (selector, contentInjector) => {
-  DomMultiplexor.qrySelector(selector).addEventListener('click', contentInjector);
+const swapContents = (injectorFunction, page) => {
+  return () => {
+    if (page !== currentPage) {
+      FaderObj.fadeSwap(DomMultiplexor.getMainContainer(), injectorFunction, 42);
+      currentPage = page;
+    }
+  };
+}
+
+const setListenerTool = (selector, contentInjector, page) => {
+  DomMultiplexor.qrySelector(selector).addEventListener('click', swapContents(contentInjector, page));
 };
 
 const aboutContent = () => {
@@ -37,7 +50,9 @@ const dishesContent = () => {
 
 const run = (() => {
   console.log('Running...');
-  setListenerTool('about', aboutContent);
-  setListenerTool('contact', contactContent);
-  setListenerTool('dishes', dishesContent);
+  setListenerTool('about', aboutContent, 1);
+  setListenerTool('contact', contactContent, 2);
+  setListenerTool('dishes', dishesContent, 3);
+
+  FaderObj.fadeIn(document.getElementsByTagName('body')[0], 50);
 });
