@@ -16,16 +16,8 @@ window.onload = function ready() {
   run();
 };
 
-const setListenerAbout = () => {
-  DomMultiplexor.qrySelector('about').addEventListener('click', aboutContent);
-};
-
-const setListenerContact = () => {
-  DomMultiplexor.qrySelector('contact').addEventListener('click', contactContent);
-};
-
-const setListenerDishes = () => {
-  DomMultiplexor.qrySelector('dishes').addEventListener('click', dishesContent);
+const setListenerTool = (selector, contentInjector) => {
+  DomMultiplexor.qrySelector(selector).addEventListener('click', contentInjector);
 };
 
 const aboutContent = () => {
@@ -44,11 +36,8 @@ const dishesContent = () => {
 };
 
 const run = (() => {
-  // ContactPage.injectContactPage();
-  // MenuPage.injectMenuPage();
-  // AboutPage.injectAboutPage();
   console.log('Running...');
-  setListenerAbout();
-  setListenerContact();
-  setListenerDishes();
+  setListenerTool('about', aboutContent);
+  setListenerTool('contact', contactContent);
+  setListenerTool('dishes', dishesContent);
 });
