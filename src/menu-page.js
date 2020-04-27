@@ -18,7 +18,7 @@ class MenuObject {
       },
       {
         img: Burger1,
-        head: 'Famous Beric',
+        head: 'Famous Atlantic',
         body: 'Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun.',
       },
       {
@@ -53,7 +53,7 @@ class MenuObject {
       },
       {
         img: Burger2,
-        head: 'The Big Beric',
+        head: 'The Big Atlantic',
         body: 'Hexagon freegan pitchfork YOLO photo booth deep v enamel pin XOXO. Sartorial thundercats next level, heirloom godard banh mi stumptown glossier jean shorts lomo raclette. Kickstarter ugh mlkshk cold-pressed everyday carry coloring book master cleanse heirloom freegan deep v enamel pin woke migas man bun.',
       },
     ];

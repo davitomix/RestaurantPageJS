@@ -16,7 +16,7 @@ class ContactObject {
     this.header.innerText = 'Contact';
 
     this.email.className = 'email';
-    this.email.innerHTML = '<a href="mailto:contact@bericburger.com">contact@bericburger.com</a>';
+    this.email.innerHTML = '<a href="mailto:contact@atlanticburger.com">contact@atlanticburger.com</a>';
 
     this.cellular.className = 'cell';
     this.cellular.innerHTML = 'Cell phone: <a href="tel:4433005440">555 555 5555</a>';
