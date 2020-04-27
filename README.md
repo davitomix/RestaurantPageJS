@@ -1,16 +1,15 @@
-# Project Name
+# Restaurant Page JS
 
-> One paragraph statement about the project.
+> This project consist on build a webpage using Webpack, ES6 Classes and Module Pattern.
 
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
+![screenshot](./main_readme.png)
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- JS
+- Webpack
+- ES6
+- CSS
 
 ## Live Demo
 
@@ -19,39 +18,18 @@ Additional description about the project and its features.
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+- Download the repo con your computer.
+- Drag and drop the index.html file on the dist folder.
+- Enjoy.
 
 
 ## Authors
 
-👤 **Author1**
+👤 **David Elí**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@davitomix](https://github.com/davitomix)
+- Twitter: [@davitomix007](https://twitter.com/davitomix007)
+- Linkedin: [David Garcia](https://www.linkedin.com/in/davideligarcia/)
 
 ## 🤝 Contributing
 
