@@ -16,6 +16,10 @@ class DomObj {
       container.removeChild(container.firstChild);
     }
   }
+
+  qrySelector(selector) {
+    return document.getElementById(selector);
+  }
 }
 
 export default DomObj;
