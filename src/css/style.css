@@ -35,7 +35,7 @@ body {
   line-height: 1em;
 }
 
-main {
+#content {
   padding-top: 25vh;
   min-width: 100vw;
   min-height: 100vh;
