@@ -5,12 +5,15 @@ import ContactObject from './contact-page';
 import MenuObject from './menu-page';
 import DomObj from './dom-utils';
 import Fader from './fader';
+import NavbarObject from './navbar-utils';
 
+
+const DomMultiplexor = new DomObj();
+const FaderObj = new Fader();
 const AboutPage = new AboutObject();
 const ContactPage = new ContactObject();
 const MenuPage = new MenuObject();
-const DomMultiplexor = new DomObj();
-const FaderObj = new Fader();
+const navBar = new NavbarObject();
 
 let currentPage;
 /* eslint-disable */
@@ -48,6 +51,7 @@ const run = (() => {
 });
 
 window.onload = function ready() {
+  navBar.injectNavbar();
   AboutPage.injectAboutPage();
   run();
 };
